@@ -1,0 +1,39 @@
+﻿<Page x:Class="AuthorApp.EditCarsSection"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AuthorApp"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Редагувати автомобілі">
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <ScrollViewer HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <ScrollViewer.Background>
+                <ImageBrush ImageSource="/pthotos/1-4-33317396.jpg"/>
+            </ScrollViewer.Background>
+            <StackPanel Height="180">
+                <Button Content="Додати новий автомобіль" Click="AddNewCar" HorizontalAlignment="Center" Margin="10">
+                    <Button.Background>
+                        <ImageBrush/>
+                    </Button.Background>
+                </Button>
+                <Button Content="Редагувати існуючий автомобіль" Click="EditExistingCar" HorizontalAlignment="Center" Margin="10">
+                    <Button.Background>
+                        <ImageBrush/>
+                    </Button.Background>
+                </Button>
+                <Button Content="Видалити автомобіль" Click="RemoveCar" HorizontalAlignment="Center" Margin="10">
+                    <Button.Background>
+                        <ImageBrush/>
+                    </Button.Background>
+                </Button>
+                <Button Content="Назад" Click="GoBack" HorizontalAlignment="Right" Margin="10">
+                    <Button.Background>
+                        <ImageBrush/>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

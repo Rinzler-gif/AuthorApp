@@ -1,0 +1,81 @@
+﻿<Page x:Class="AuthorApp.AddArticleWindow"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AuthorApp"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Додати статтю">
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <ScrollViewer Margin="-10,0,0,0">
+            <ScrollViewer.Background>
+                <ImageBrush ImageSource="/pthotos/4к-картинки-на-рабочий-стол-скачать-бесплатно-29-1939066965.jpg" Stretch="Uniform"/>
+            </ScrollViewer.Background>
+            <StackPanel Width="795">
+                <TextBox Name="BrandBox" Margin="10" Text="Бренд" Tag="Бренд" Foreground="Gray" GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText">
+                    <TextBox.Background>
+                        <ImageBrush/>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBox Name="ModelBox" Margin="10" Text="Модель" Tag="Модель" Foreground="Gray" GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText">
+                    <TextBox.Background>
+                        <ImageBrush/>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBox Name="GenerationBox" Margin="10" Text="Покоління" Tag="Покоління" Foreground="Gray" GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText">
+                    <TextBox.Background>
+                        <ImageBrush/>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBox Name="ProductionYearsBox" Margin="10" Text="Роки виробництва" Tag="Роки виробництва" Foreground="Gray" GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText">
+                    <TextBox.Background>
+                        <ImageBrush/>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBox Name="BodyTypeBox" Margin="10" Text="Тип кузова" Tag="Тип кузова" Foreground="Gray" GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText">
+                    <TextBox.Background>
+                        <ImageBrush/>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBox Name="EngineBox" Margin="10" Text="Двигун" Tag="Двигун" Foreground="Gray" GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText">
+                    <TextBox.Background>
+                        <ImageBrush/>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBox Name="TransmissionBox" Margin="10" Text="Трансмісія" Tag="Трансмісія" Foreground="Gray" GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText">
+                    <TextBox.Background>
+                        <ImageBrush/>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBox Name="WeightBox" Margin="10" Text="Вага" Tag="Вага" Foreground="Gray" GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText">
+                    <TextBox.Background>
+                        <ImageBrush/>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBox Name="Image1Box" Margin="10" Text="URL зображення 1" Tag="URL зображення 1" Foreground="Gray" GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText">
+                    <TextBox.Background>
+                        <ImageBrush/>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBox Name="Image2Box" Margin="10" Text="URL зображення 2" Tag="URL зображення 2" Foreground="Gray" GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText">
+                    <TextBox.Background>
+                        <ImageBrush/>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBox Name="DescriptionBox" Margin="10" Text="Опис" Tag="Опис" Foreground="Gray" GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto">
+                    <TextBox.Background>
+                        <ImageBrush/>
+                    </TextBox.Background>
+                </TextBox>
+                <Button Content="Зберегти" Click="SaveArticle" HorizontalAlignment="Center" Margin="10" Foreground="#FF848484">
+                    <Button.Background>
+                        <ImageBrush/>
+                    </Button.Background>
+                </Button>
+                <Button Content="Назад" Click="GoBack" HorizontalAlignment="Right" Margin="10"/>
+            </StackPanel>
+        </ScrollViewer>
+
+    </Grid>
+</Page>

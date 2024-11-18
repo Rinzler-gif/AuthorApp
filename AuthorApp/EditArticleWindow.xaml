@@ -1,0 +1,94 @@
+﻿<Page x:Class="AuthorApp.EditArticleWindow"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AuthorApp"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Редагувати статтю">
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <ScrollViewer>
+            <ScrollViewer.Background>
+                <ImageBrush ImageSource="/pthotos/ferrari-tyuning-serebryanyj-kolesa-osen-derevya-list-solnce-zelenyj-asfalt-439614377.jpg"/>
+            </ScrollViewer.Background>
+            <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <ComboBox Name="BrandComboBox" Margin="10" SelectionChanged="BrandComboBox_SelectionChanged">
+                    <ComboBox.Background>
+                        <ImageBrush/>
+                    </ComboBox.Background>
+                </ComboBox>
+                <ComboBox Name="ModelComboBox" Margin="10" SelectionChanged="ModelComboBox_SelectionChanged">
+                    <ComboBox.Background>
+                        <ImageBrush/>
+                    </ComboBox.Background>
+                </ComboBox>
+                <TextBox Name="BrandBox" Margin="10" Text="Бренд" Tag="Бренд" GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText" Foreground="White">
+                    <TextBox.Background>
+                        <ImageBrush/>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBox Name="ModelBox" Margin="10" Text="Модель" Tag="Модель" GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText" Foreground="White">
+                    <TextBox.Background>
+                        <ImageBrush/>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBox Name="GenerationBox" Margin="10" Text="Покоління" Tag="Покоління" GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText" Foreground="White">
+                    <TextBox.Background>
+                        <ImageBrush/>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBox Name="ProductionYearsBox" Margin="10" Text="Роки виробництва" Tag="Роки виробництва" GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText" Foreground="White">
+                    <TextBox.Background>
+                        <ImageBrush/>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBox Name="BodyTypeBox" Margin="10" Text="Тип кузова" Tag="Тип кузова" GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText" Foreground="White">
+                    <TextBox.Background>
+                        <ImageBrush/>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBox Name="EngineBox" Margin="10" Text="Двигун" Tag="Двигун" GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText" Foreground="White">
+                    <TextBox.Background>
+                        <ImageBrush/>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBox Name="TransmissionBox" Margin="10" Text="Трансмісія" Tag="Трансмісія" GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText" Foreground="White">
+                    <TextBox.Background>
+                        <ImageBrush/>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBox Name="WeightBox" Margin="10" Text="Вага" Tag="Вага" GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText" Foreground="White">
+                    <TextBox.Background>
+                        <ImageBrush/>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBox Name="Image1Box" Margin="10" Text="URL зображення 1" Tag="URL зображення 1" GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText" Foreground="White">
+                    <TextBox.Background>
+                        <ImageBrush/>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBox Name="Image2Box" Margin="10" Text="URL зображення 2" Tag="URL зображення 2" GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText" Foreground="White">
+                    <TextBox.Background>
+                        <ImageBrush/>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBox Name="DescriptionBox" Margin="10" Text="Опис" Tag="Опис" GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Foreground="White">
+                    <TextBox.Background>
+                        <ImageBrush/>
+                    </TextBox.Background>
+                </TextBox>
+                <Button Content="Зберегти" Click="SaveArticle" HorizontalAlignment="Center" Margin="10" Foreground="White">
+                    <Button.Background>
+                        <ImageBrush/>
+                    </Button.Background>
+                </Button>
+                <Button Content="Назад" Click="GoBack" HorizontalAlignment="Right" Margin="10" Foreground="White">
+                    <Button.Background>
+                        <ImageBrush/>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
